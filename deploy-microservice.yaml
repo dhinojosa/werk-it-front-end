@@ -24,7 +24,7 @@ spec:
                     name: werk-it-microservice
                     ports:
                         -   name: web
-                            containerPort: 3080
+                            containerPort: 3000
 ---
 
 kind: Service
