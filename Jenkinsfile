@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm build'
-//          }
+            }
         }
         stage('Build Container') {
             steps {
@@ -42,3 +42,4 @@ pipeline {
         }
     }
 }
+
