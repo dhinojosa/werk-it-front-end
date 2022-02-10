@@ -13,14 +13,13 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './mvnw clean package'
-//                sh '${POM_VERSION}'
-            }
+                sh 'npm build'
+//          }
         }
         stage('Build Container') {
             steps {
                 script {
-                    docker.build("${JOB_NAME}", '-f src/main/docker/Dockerfile.jvm .')
+                    docker.build("${JOB_NAME}", '-f Dockerfile .')
                 }
             }
         }
