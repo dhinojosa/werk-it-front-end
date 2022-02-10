@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'npm install react-scripts'
+                sh 'npm install react-scripts --save'
                 sh 'npm run build'
             }
         }
