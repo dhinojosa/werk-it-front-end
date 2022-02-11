@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faFire, faDumbbell, faUtensils, faUser } from '@fortawesome/fontawesome-free-solid'
 
-export default function Navbar() {
+function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <nav className="items-center justify-between px-2 py-3 bg-amber-500 mb-3">
@@ -64,3 +64,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar

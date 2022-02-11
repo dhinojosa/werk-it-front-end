@@ -1,5 +1,7 @@
-import React from "react";
+import React from "react"
 
-export default function Footer() {
+function Footer() {
        return( <h1>© To That Girl Who Great Ideas</h1>)
 }
+
+export default Footer

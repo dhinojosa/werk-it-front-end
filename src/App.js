@@ -1,5 +1,5 @@
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "./components/navbar"
+import Footer from "./components/footer"
 
 function App() {
   return (
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
