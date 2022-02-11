@@ -11,10 +11,15 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build') {
+        stage('Test') {
             steps {
                 sh 'npm install react-scripts --save'
-                sh 'npm run build'
+                // sh 'npm test
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm build'
             }
         }
         stage('Build Container') {
