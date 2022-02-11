@@ -1,13 +1,14 @@
 # pull official base image
-FROM node:17.4.0-alpine
+FROM node:17.4.0-alpine as build
 
 # set working directory
 WORKDIR /app
 
-ENV PUBLIC_URL=https://staging.tiered-planet.net/werk-it
-ENV PUBLIC_PATH=https://staging.tiered-planet.net/werk-it
-
 COPY package.json ./
 RUN npm install
 COPY . .
-CMD ["npm", "start"]
+RUN npm run build
+
+FROM nginx
+# COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/build /usr/share/nginx/html
