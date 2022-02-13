@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Exercises from "./pages/Exercises";
 import Nutrition from "./pages/Nutrition";
