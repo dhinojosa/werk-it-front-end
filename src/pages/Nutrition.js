@@ -1,7 +1,7 @@
 import React from "react";
 
-function About() {
+function Nutrition() {
   return <div>THIS IS THE ABOUT PAGE</div>;
 }
 
-export default About;
+export default Nutrition;

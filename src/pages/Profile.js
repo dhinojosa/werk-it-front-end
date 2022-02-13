@@ -9,11 +9,11 @@ function Profile() {
       THIS IS THE PROFILE PAGE FOR {username}!
       <button
         onClick={() => {
-          navigate("/about");
+          navigate("/Exercises");
         }}
       >
         {" "}
-        Change to about page
+        Change to Exercises page
       </button>
     </div>
   );
