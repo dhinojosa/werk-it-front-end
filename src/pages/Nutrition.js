@@ -1,7 +1,7 @@
 import React from "react";
 
 function Nutrition() {
-  return <div>THIS IS THE ABOUT PAGE</div>;
+  return <div>THIS IS THE NUTRITION PAGE</div>;
 }
 
 export default Nutrition;
