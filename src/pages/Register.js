@@ -53,7 +53,7 @@ function Register() {
           </Col>
         </Row>
         
-        <Button className="m-3" variant="primary" type="submit">
+        <Button className="m-3" variant="success" type="submit">
           Register
         </Button>
       </Form>
