@@ -48,7 +48,7 @@ class NavbarComp extends Component {
                       as={Link}
                       to="/register"
                     >
-                     <FaUserPlus />{" "} Create a profile
+                      <FaUserPlus /> Create a profile
                     </Button>
                     <Button
                       className="mt-2 mx-lg-5"
@@ -56,7 +56,7 @@ class NavbarComp extends Component {
                       as={Link}
                       to="/login"
                     >
-                      <FaUser />{" "}Profile
+                      <FaUser /> Profile
                     </Button>
                   </Nav>
                 </Navbar.Collapse>

@@ -1,13 +1,15 @@
 import React from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Button } from "react-bootstrap";
+import { IoMdSettings } from "react-icons/io";
 
 function Footer() {
   return (
     <div className="fixed-bottom">
-      <Navbar bg="light">
-        <Container fluid>
-          <Navbar.Brand>© Seritha</Navbar.Brand>
-        </Container>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand className="mx-3">© Seritha</Navbar.Brand>
+        <Button className=" mx-3 ms-auto" variant="link">
+          Settings<IoMdSettings/> 
+        </Button>
       </Navbar>
     </div>
   );
