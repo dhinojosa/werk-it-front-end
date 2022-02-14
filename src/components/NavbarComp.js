@@ -10,6 +10,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import PagesRoutes from "./PagesRoutes";
+import Footer from "./Footer";
 
 class NavbarComp extends Component {
   render() {
@@ -63,6 +64,7 @@ class NavbarComp extends Component {
             </Navbar>
           </div>
           <PagesRoutes />
+          <Footer />
         </Router>
       </div>
     );
