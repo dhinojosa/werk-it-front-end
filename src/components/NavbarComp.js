@@ -16,7 +16,7 @@ class NavbarComp extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Navbar bg="light" expand="lg">
               <Container fluid>
