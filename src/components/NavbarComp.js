@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import {
+  FaFire,
+  FaHome,
+  FaDumbbell,
+  FaUtensils,
+  FaUserPlus,
+  FaUser,
+} from "react-icons/fa";
 import Footer from "./Footer";
 import PagesRoutes from "./PagesRoutes";
 
@@ -12,7 +20,10 @@ class NavbarComp extends Component {
           <div>
             <Navbar bg="light" expand="lg">
               <Container fluid>
-                <Navbar.Brand>Werk-it</Navbar.Brand>
+                <Navbar.Brand>
+                  <FaFire />
+                  Werk-it
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                   <Nav
@@ -21,13 +32,13 @@ class NavbarComp extends Component {
                     navbarScroll
                   >
                     <Nav.Link className="mx-lg-5" as={Link} to="/">
-                      Home
+                      <FaHome /> Home
                     </Nav.Link>
                     <Nav.Link className="mx-lg-5" as={Link} to="/exercises">
-                      Exercises
+                      <FaDumbbell /> Exercises
                     </Nav.Link>
                     <Nav.Link className="mx-lg-5" as={Link} to="/nutrition">
-                      Nutrition
+                      <FaUtensils /> Nutrition
                     </Nav.Link>
                   </Nav>
                   <Nav>
@@ -37,7 +48,7 @@ class NavbarComp extends Component {
                       as={Link}
                       to="/register"
                     >
-                      Create a profile
+                     <FaUserPlus />{" "} Create a profile
                     </Button>
                     <Button
                       className="mt-2 mx-lg-5"
@@ -45,7 +56,7 @@ class NavbarComp extends Component {
                       as={Link}
                       to="/login"
                     >
-                      Profile
+                      <FaUser />{" "}Profile
                     </Button>
                   </Nav>
                 </Navbar.Collapse>
