@@ -6,7 +6,7 @@ function Footer() {
     <div className="fixed-bottom">
       <Navbar bg="light">
         <Container fluid>
-          <Navbar.Brand>Footer</Navbar.Brand>
+          <Navbar.Brand>© Seritha</Navbar.Brand>
         </Container>
       </Navbar>
     </div>
