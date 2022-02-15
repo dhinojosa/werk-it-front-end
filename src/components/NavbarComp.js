@@ -7,7 +7,7 @@ import {
     FaDumbbell,
     FaUtensils,
     FaUserPlus,
-    FaUser, FaLock,
+    FaLock,
 } from "react-icons/fa";
 import PagesRoutes from "./PagesRoutes";
 import Footer from "./Footer";
