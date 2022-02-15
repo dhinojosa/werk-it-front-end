@@ -4,12 +4,16 @@ class Exercises extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {result: []};
+        this.state = {weights: [], aerobics: []};
     }
 
     render() {
-        return (<div name="exercises" className="Exercises">
-            <table name="weights">
+        return (
+            <div name="exercises" className="exercises">
+            //one: create weight
+
+                <h3>Weights</h3>
+            <table name="weights-table">
                 <thead>
                 <tr>
                     <td>Date</td>
@@ -20,7 +24,7 @@ class Exercises extends React.Component {
                 </tr>
                 </thead>
                 <tbody>
-                {this.state.result.map((exercise) => {
+                {this.state.weights.map((exercise) => {
                     return (<tr key={exercise.id}>
                         <td>2022-12-12</td>
                         <td>{exercise.name}</td>
@@ -31,7 +35,27 @@ class Exercises extends React.Component {
                 })}
                 </tbody>
             </table>
-        </div>);
+                <h3>Aerobics</h3>
+                <table name="aerobics-table">
+                    <thead>
+                    <tr>
+                        <td>Date</td>
+                        <td>Name</td>
+                        <td>Seconds</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {this.state.aerobics.map((exercise) => {
+                        return (<tr key={exercise.id}>
+                            <td>2022-12-12</td>
+                            <td>{exercise.name}</td>
+                            <td>{exercise.seconds}</td>
+                        </tr>);
+                    })}
+                    </tbody>
+                </table>
+                </div>
+        );
     }
 
 
@@ -39,12 +63,22 @@ class Exercises extends React.Component {
         try {
             const cookie = getCookie("id");
             let input = process.env.REACT_APP_BACKEND_URL + '/weights/user/' + cookie;
-
             console.log(input);
             fetch(input)
                 .then(response => response.json())
                 .then(data => {
-                    this.setState({result: data});
+                    this.setState({weights: data});
+                })
+                .catch(error => {
+                    console.log(error)
+                });
+
+            input = process.env.REACT_APP_BACKEND_URL + '/aerobics/user/' + cookie;
+            console.log(input);
+            fetch(input)
+                .then(response => response.json())
+                .then(data => {
+                    this.setState({aerobics: data});
                 })
                 .catch(error => {
                     console.log(error)
@@ -53,8 +87,6 @@ class Exercises extends React.Component {
             console.log(error)
         }
     }
-
-
 }
 
 const getCookie = (name) => {
