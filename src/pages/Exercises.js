@@ -10,8 +10,6 @@ class Exercises extends React.Component {
     render() {
         return (
             <div name="exercises" className="exercises">
-            //one: create weight
-
                 <h3>Weights</h3>
             <table name="weights-table">
                 <thead>
