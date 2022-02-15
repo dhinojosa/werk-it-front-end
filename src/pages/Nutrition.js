@@ -10,48 +10,48 @@ function Nutrition() {
       </h1>
       <Row className="my-5">
         <Card className="m-3" bg="light" style={{ width: "18rem" }}>
-          <Card.Img className="mt-2" variant="top" src="holder.js/100px180" />
+          <Card.Img className="mt-2" variant="top" src="./images/jpg/Fist.png" />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Freedom Diet</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              In this diet you eat what you want. Live free, eat well and enjoy.<br/><br/>
+              Anything can be added to your bascet.
             </Card.Text>
             <Button variant="primary">Select</Button>
           </Card.Body>
         </Card>
 
         <Card className="m-3" bg="light" style={{ width: "18rem" }}>
-          <Card.Img className="mt-2" variant="top" src="holder.js/100px180" />
+          <Card.Img className="mt-2" variant="top" src="./images/jpg/Bio.png" />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Organic diet</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              With this diet you are making a huge difference for you and the planet.<br/><br/>
+              Only organic items can be added to your basket.
             </Card.Text>
             <Button variant="primary">Select</Button>
           </Card.Body>
         </Card>
 
         <Card className="m-3" bg="light" style={{ width: "18rem" }}>
-          <Card.Img className="mt-2" variant="top" src="holder.js/100px180" />
+          <Card.Img className="mt-2" variant="top" src="./images/jpg/Leaf.png" />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Vegetarian diet</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Meat is always getting more expensive. Save yourself money, eat healthy.<br/><br/>
+              Any meat product cannot be added to your basket.
             </Card.Text>
             <Button variant="primary">Select</Button>
           </Card.Body>
         </Card>
 
         <Card className="m-3" bg="light" style={{ width: "18rem" }}>
-          <Card.Img className="mt-2" variant="top" src="holder.js/100px180" />
+          <Card.Img className="mt-2" variant="top" src="./images/jpg/Vegan.png" />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Vegan Diet</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              This is the diet for those against any animal life edible products.<br/><br/>
+              You cannot add meat, dairy and honey to your basket.
             </Card.Text>
             <Button variant="primary">Select</Button>
           </Card.Body>
