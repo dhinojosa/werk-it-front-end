@@ -31,16 +31,16 @@ class NavbarComp extends Component {
                     style={{ maxHeight: "200px" }}
                     navbarScroll
                   >
-                    <Nav.Link className="mx-lg-5" as={Link} to="/">
+                    <Nav.Link className="mx-lg-5" as={Link} to="/werk-it">
                       <FaHome /> Home
                     </Nav.Link>
-                      <Nav.Link className="mx-lg-5" as={Link} to="/login">
+                      <Nav.Link className="mx-lg-5" as={Link} to="/werk-it/login">
                           <FaLock /> Login
                       </Nav.Link>
-                    <Nav.Link className="mx-lg-5" as={Link} to="/exercises">
+                    <Nav.Link className="mx-lg-5" as={Link} to="/werk-it/exercises">
                       <FaDumbbell /> Exercises
                     </Nav.Link>
-                    <Nav.Link className="mx-lg-5" as={Link} to="/nutrition">
+                    <Nav.Link className="mx-lg-5" as={Link} to="/werk-it/nutrition">
                       <FaUtensils /> Nutrition
                     </Nav.Link>
                   </Nav>
@@ -49,17 +49,9 @@ class NavbarComp extends Component {
                       className="mt-2 mx-lg-3"
                       variant="outline-success"
                       as={Link}
-                      to="/register"
+                      to="/werk-it/register"
                     >
                       <FaUserPlus /> Create a profile
-                    </Button>
-                    <Button
-                      className="mt-2 mx-lg-5"
-                      variant="outline-primary"
-                      as={Link}
-                      to="/login"
-                    >
-                      <FaUser /> Profile
                     </Button>
                   </Nav>
                 </Navbar.Collapse>
