@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import {
-  FaFire,
-  FaHome,
-  FaDumbbell,
-  FaUtensils,
-  FaUserPlus,
-  FaUser,
+    FaFire,
+    FaHome,
+    FaDumbbell,
+    FaUtensils,
+    FaUserPlus,
+    FaUser, FaLock,
 } from "react-icons/fa";
 import PagesRoutes from "./PagesRoutes";
 import Footer from "./Footer";
@@ -34,6 +34,9 @@ class NavbarComp extends Component {
                     <Nav.Link className="mx-lg-5" as={Link} to="/">
                       <FaHome /> Home
                     </Nav.Link>
+                      <Nav.Link className="mx-lg-5" as={Link} to="/login">
+                          <FaLock /> Login
+                      </Nav.Link>
                     <Nav.Link className="mx-lg-5" as={Link} to="/exercises">
                       <FaDumbbell /> Exercises
                     </Nav.Link>
