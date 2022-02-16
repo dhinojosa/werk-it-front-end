@@ -16,7 +16,7 @@ function PagesRoutes() {
         <Routes>
             <Route path="/werk-it/" element={<Home/>}/>
             <Route path="/werk-it/register" element={<Register/>}/>
-            <Route path="/login" element={<Login/>}/>
+            <Route path="/werk-it/login" element={<Login/>}/>
             <Route path="/werk-it/recover-password" element={<RecoverLogin/>}/>
             <Route path="/werk-it/exercises" element={<Exercises/>}/>
             <Route path="/werk-it/weights" element={<Weights/>}/>
