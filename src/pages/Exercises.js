@@ -11,28 +11,30 @@ class Exercises extends React.Component {
         return (
             <div name="exercises" className="exercises">
                 <h3>Weights</h3>
-            <table name="weights-table">
-                <thead>
-                <tr>
-                    <td>Date</td>
-                    <td>Name</td>
-                    <td>Sets</td>
-                    <td>Reps</td>
-                    <td>Weight (in lbs)</td>
-                </tr>
-                </thead>
-                <tbody>
-                {this.state.weights.map((exercise) => {
-                    return (<tr key={exercise.id}>
-                        <td>2022-12-12</td>
-                        <td>{exercise.name}</td>
-                        <td>{exercise.sets}</td>
-                        <td>{exercise.reps}</td>
-                        <td>{exercise.pounds}</td>
-                    </tr>);
-                })}
-                </tbody>
-            </table>
+                <div><a href={"weights"}>Add Weight Entry</a></div>
+                <div><a href={"aerobics"}>Add Aerobics Entry</a></div>
+                <table name="weights-table">
+                    <thead>
+                    <tr>
+                        <td>Date</td>
+                        <td>Name</td>
+                        <td>Sets</td>
+                        <td>Reps</td>
+                        <td>Weight (in lbs)</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {this.state.weights.map((exercise) => {
+                        return (<tr key={exercise.id}>
+                            <td>2022-12-12</td>
+                            <td>{exercise.name}</td>
+                            <td>{exercise.sets}</td>
+                            <td>{exercise.reps}</td>
+                            <td>{exercise.pounds}</td>
+                        </tr>);
+                    })}
+                    </tbody>
+                </table>
                 <h3>Aerobics</h3>
                 <table name="aerobics-table">
                     <thead>
@@ -52,7 +54,7 @@ class Exercises extends React.Component {
                     })}
                     </tbody>
                 </table>
-                </div>
+            </div>
         );
     }
 

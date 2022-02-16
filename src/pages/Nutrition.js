@@ -34,7 +34,7 @@ function Nutrition() {
         </Card>
 
         <Card className="m-3" bg="light" style={{ width: "18rem" }}>
-          <Card.Img className="mt-2" variant="top" src="images/jpg/Leaf.png" />
+          <Card.Img className="mt-2" variant="top" src="/images/jpg/Leaf.png" />
           <Card.Body>
             <Card.Title>Vegetarian diet</Card.Title>
             <Card.Text>
@@ -46,7 +46,7 @@ function Nutrition() {
         </Card>
 
         <Card className="m-3" bg="light" style={{ width: "18rem" }}>
-          <Card.Img className="mt-2" variant="top" src="images/jpg/Vegan.png" />
+          <Card.Img className="mt-2" variant="top" src="/images/jpg/Vegan.png" />
           <Card.Body>
             <Card.Title>Vegan Diet</Card.Title>
             <Card.Text>
