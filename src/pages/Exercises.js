@@ -11,8 +11,8 @@ class Exercises extends React.Component {
         return (
             <div name="exercises" className="exercises">
                 <h3>Weights</h3>
-                <div><a href={"/werk-it/weights"}>Add Weight Entry</a></div>
-                <div><a href={"/werk-it/aerobics"}>Add Aerobics Entry</a></div>
+                <div><a href={"weights"}>Add Weight Entry</a></div>
+                <div><a href={"aerobics"}>Add Aerobics Entry</a></div>
                 <table name="weights-table">
                     <thead>
                     <tr>
