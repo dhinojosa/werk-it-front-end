@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class Exercises extends React.Component {
 
@@ -11,8 +12,8 @@ class Exercises extends React.Component {
         return (
             <div name="exercises" className="exercises">
                 <h3>Weights</h3>
-                <div><a href={"weights"}>Add Weight Entry</a></div>
-                <div><a href={"aerobics"}>Add Aerobics Entry</a></div>
+                <Link to={"/weights"}>Add Weight Entry</Link>
+                <Link to={"/aerobics"}>Add Weight Entry</Link>
                 <table name="weights-table">
                     <thead>
                     <tr>
